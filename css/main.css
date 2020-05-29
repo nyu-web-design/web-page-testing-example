@@ -1,0 +1,17 @@
+div.container {
+  border: 1px dotted gray;
+  margin: 20px;
+  padding: 20px;
+  max-width: 1140px;
+  /* the actual width of this element will be width + padding + border = 1182 */
+}
+
+p.first-paragraph {
+  /* green text */
+  color: green;
+}
+
+p.second-paragraph:hover {
+  /* change font to helvetica on hover */
+  font-family: helvetica, sans-serif;
+}
