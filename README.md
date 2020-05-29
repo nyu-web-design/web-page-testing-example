@@ -22,3 +22,5 @@ The automated tests in this example are written in Python, and require the follo
 Additional, to run these tests, you must separately install:
 
 - the [selenium driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) suitable for your local version of Google Chrome
+- the location of the selenium driver you download must be added to your system's PATH variable.... instructions for doing this are readily available.
+- alternatively, simply place the selenium driver into a directory that is already in your PATH variabl.
