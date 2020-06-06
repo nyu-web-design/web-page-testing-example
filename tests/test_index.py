@@ -1,5 +1,8 @@
 """
 An experiment showing how to automate testing of web page development in HTML & CSS.
+Selenium webdriver for Chrome (a.k.a. the file named chromedriver) must be installed in either:
+- in the same directory as chrome.exe on Windows (e.g. C:\Program Files\Google\Chrome\Application)
+- in a directory that is included in the PATH on Mac OS X (e.g. /usr/local/bin)
 """
 import pytest
 import json
@@ -26,7 +29,7 @@ class Tests:
     print(settings["site_url"])
 
     # set up the fixture
-    driver = webdriver.Chrome('/Users/amos/selenium/chromedriver')
+    driver = webdriver.Chrome()
     driver.get(settings["site_url"]) # load the site from the settings file
     # provide the fixture value
     yield driver  
